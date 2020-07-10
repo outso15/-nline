@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="content=" width=device-width, initial-scale=1 ">
+    <title>Ventas @nline</title>
+    <link rel="icon " type="image/x-icon " href="https://image.flaticon.com/icons/svg/806/806055.svg ">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&&family=Roboto&display=swap " rel="stylesheet ">
+
+    
+</head>
+
+<style>
+.bg-bluedark{
+    background-color: #11172b;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;font-size: 24px; font-weight: 800;
+    color: white;
+}
+.robotonow{
+    font-family: 'Roboto', sans-serif;font-size: 24px; font-weight: 800;
+    color: #666666;
+}
+.robotopeq{
+    font-family: 'Roboto', sans-serif;font-size: 24px; font-weight: 300;
+    color: #666666;
+}
+.robotopeqg{
+    font-family: 'Roboto', sans-serif;font-size: 6em; font-weight: 300;
+    color: #666666;
+}
+.roboto32{
+    font-family: 'Roboto', sans-serif;font-size: 32px; font-weight: 800;
+    color: #666666;
+}
+.robotoft{
+    font-family: 'Roboto', sans-serif;font-size: 1em; font-weight: 400;
+    text-align: center;
+    color: white;
+    letter-spacing: 0.3em;
+}
+.robotofl{
+    font-family: 'Roboto', sans-serif;font-size: 1em; font-weight: 300;
+    text-align: center;
+    color: white;
+}
+.robotofl2{
+    font-family: 'Roboto', sans-serif;font-size: 1em; font-weight: 300;
+    text-align: center;
+    color: #666666;
+}
+
+
+a:hover {
+  color: #666666;
+  cursor: pointer;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    
+}
+.naving{    
+    padding: 2px;
+    margin: 10px;   
+    align-self: auto;
+    
+    onMouseover="this.style.color='blue' " onMouseout="this.style.color='red' "
+}
+.aling-end{
+    align-self: auto;
+    justify-content: flex-end;
+}
+.aling-center{
+    align-self: auto;
+    justify-content: center;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 8%;
+  gap: 1% 1%;
+  grid-template-areas: "logo nav ";
+  
+}
+
+.logo { grid-area: logo; }
+
+.nav { grid-area: nav; }
+
+.texto-encima{
+        position: absolute;
+        top: 10%;
+        left: 4%;
+        letter-spacing: 2px;
+        
+}
+.texto-encima3{
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        letter-spacing: 2px;
+
+}
+.texto-encima2{
+        position: absolute;
+        top: 70%;
+        left: 4%;
+        letter-spacing: 2px;
+        
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 3em;
+}
+.contenedor{    
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        background: url(https://josefacchin.com/wp-content/uploads/2016/07/Montar-tienda-online-2-1024x512.png) ;
+background-size: 100% 115%;
+width: 100%;
+}
+
+.contenedorp{    
+        position: relative;
+        display: inline-block;   
+}
+
+.mp10-2{
+    margin: 3%;
+    padding: 2%;
+}
+
+.grid-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 45% 45% 45%;
+    gap: 5% 5%;
+    grid-template-areas: "p1 p2 " "p3 p4 " "p5 p6 ";
+  
+}
+
+.p1 { grid-area: p1; 
+    
+border: 2px solid;
+
+}
+
+.p2 { grid-area: p2; 
+    border: 2px solid; 
+}    
+
+.p3 { grid-area: p3; 
+    border: 2px solid;}
+
+.p4 { grid-area: p4; 
+    border: 2px solid;}
+
+.p5 { grid-area: p5; 
+    border: 2px solid;}
+
+.p6 { grid-area: p6; 
+    border: 2px solid;}
+
+.color-1 {
+    background: -webkit-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background:    -moz-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background:     -ms-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background:      -o-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background:         linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+  background-image: radial-gradient(circle,#ffffff, #666666);
+}
+.color-2{
+    background:         linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+}
+.color-3{
+    background: -webkit-linear-gradient(90deg, #e74d6b 10%, #8cc8ac 90%);
+}
+.color-4{
+    background:         linear-gradient(90deg, #65997d 10%, #fccb6e 90%);
+}
+.color-5{
+    background-image: url(https://skatespain.com/wp/wp-content/uploads/2018/06/Qu%C3%A9-es-el-skateboarding.jpg);
+    background-size: cover;
+                    
+}
+.color-6{
+    
+    background:      linear-gradient(90deg, #53bbbf 10%, #0f1939 90%);
+}
+
+.box {   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+.drop { filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.7)); }
+.m50{
+    margin: 50%;
+}
+.btn-rojo{
+        border-bottom-style: solid;
+        border-color:#e31c34;
+        background-color: #e31c34;
+        text-align: center;
+        width: 30%;
+        padding: 2%;
+        top: 75% ;        
+        left: 70%;
+        position: absolute;
+        
+        font-family: 'Roboto', sans-serif;font-size: 120%; font-weight: 800;
+        color: white;
+        letter-spacing: 2px;
+}
+.namep{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+
+    font-family: 'Roboto', sans-serif;font-size: 150%; font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+}
+.price{
+    position: absolute;
+    top: 35%;
+    left: 70%;
+    font-family: 'Roboto', sans-serif;font-size: 200%; font-weight: 800;
+    color: white;
+    letter-spacing: 2px;
+}
+.pricebefore{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    font-family: 'Roboto', sans-serif;font-size: 100%; font-weight: 800;
+    text-decoration: line-through;
+    color: #666666;
+    letter-spacing: 2px;
+    
+}
+
+.foot{
+    text-align: center;
+    column-count: 3;
+    flex-grow: 1;
+    justify-content: right;
+}
+
+.copy{
+    background-color: #1D3557;
+    font-family: 'Roboto', sans-serif;font-size: 1em; font-weight: 300;
+    text-align: center;
+    color: #666666;
+
+}
+
+</style>
+
+<body>
+    <div class="grid-container2 bg-bluedark ">
+        <div class="logo flex aling-end ">
+            <h1 class="roboto ">TIENDA <span class=" robotopeq " >@nline</span></h1>          
+        </div>
+        <div class="nav flex aling-center ">
+            <div class="naving ">
+                <a class=" robotonow " href=" "><span ">Inicio</span>
+    </a>
+    </div>
+    <div class="naving ">
+        <a class="roboto " href=" ">Productos</a>
+    </div>
+    <div class=" naving ">
+        <a class="roboto " href=" ">Contacto</a>
+    </div>
+    <div class="naving ">
+        <a class=" " href=" "><img src="shopping-cart.png " alt="Carrito " width="28 " height="28 "></a>
+    </div>
+    </div>
+    </div>
+
+    <div class=" contenedor ">
+
+        <div class="texto-encima ">
+            <span class="lato drop ">Bienvenido!</span>
+        </div>
+        <div class="texto-encima3 ">
+            <span class="robotopeqg drop">@nline</span>
+        </div>
+        <div class="texto-encima2 ">
+            <span class="lato ">La tienda online con los mejores precios.</span>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg " viewBox="0 0 1440 320 ">
+            <path fill="#11172b " fill-opacity="0.8 " d="M0,128L60,144C120,160,240,192,360,208C480,224,600,224,720,218.7C840,213,960,203,1080,202.7C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z ">
+            </path>
+        </svg>
+    </div>
+    <div class="aling-center flex mp10-2 ">
+        <span class="roboto32 ">¡Solo por hoy!</span>
+    </div>
+
+    <div style="margin-bottom: 30%; " class="grid-container ">
+        <div class="p1 color-1 contenedorp ">
+            <img style="margin: 7% 2% 2% 10%; " width="35% " class="drop " src="https://lh3.googleusercontent.com/proxy/uRsdnNPpJmA9ylgold4bk62avNbzeUmALXlUfgZu7Bx_nPMUs4F1ShMx0mVPNFmzHlVbgH3jgSwq0ePwQtrZIEJmtAIUZy0aHJKQx2SWvn33aDKwZFg " alt=" ">
+            <div class="namep ">
+                <span class=" drop ">Camisa Elixir T-07</span>
+            </div>
+            <div class="price drop ">
+                <span>$50.000</span>
+            </div>
+            <div class="pricebefore ">
+                <span>$70.000</span>
+            </div>
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+        <div class="p2 color-2 contenedorp ">
+            <img style="margin: 7% 2% 2% 10%; " width="50% " class="drop " src=" https://images.samsung.com/is/image/samsung/latin_UN43J5200AHXPA_001_Front_black?$L1-Thumbnail$ " alt=" ">
+            <div class="namep ">
+                <span class=" drop ">Samsung SmartTv FHD</span>
+            </div>
+            <div class="price drop " style="left: 65% ; ">
+                <span>$1.000.000</span>
+            </div>
+            <div class="pricebefore " style="left: 65% ; ">
+                <span>$1.200.000</span>
+            </div>
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+        <div class="p3 color-3 contenedorp ">
+            <img style="margin: 12% 2% 2% 10%; " width="50% " class="drop " src="https://lh3.googleusercontent.com/proxy/Yyv6oqMgWGVh4HLnk1YctB_jlnl003rB4iZRFPf3r1-QuHkSF4-rQR4Y-wc-jfFEn9VXxo_6CKONK0baBkmDW5AUDy-DxG8-2ZHfIT_9Jw9XnL0tttg " alt=" ">
+            <div class="namep ">
+                <span class=" drop ">Bicicleta de ruta PIVOT </span>
+            </div>
+            <div class="price drop " style="left: 65% ; ">
+                <span>$1.750.000</span>
+            </div>
+            <div class="pricebefore " style="left: 65% ; ">
+                <span>$2.000.000</span>
+            </div>
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+        <div class="p4 color-4 contenedorp ">
+            <img style="margin: 7% 2% 2% 7%; " width="40% " class="drop " src="https://lh3.googleusercontent.com/proxy/D7U3kPWZPjIW9izroNC5XGGKLcW_Q8oKZHC5MCNUe__p2ZunlhLv_fbsSUUUIyIDqkVoeJpJEaE6Wcu478UZmjXAYEBAsI6ymTBFZOFvdkIv9u1cTa8 " alt=" ">
+            <div class="namep ">
+                <span class=" drop ">Pringles</span>
+            </div>
+            <div class="price drop ">
+                <span>$5.000</span>
+            </div>
+            <div class="pricebefore ">
+                <span>$6.500</span>
+            </div>
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+        <div class="p5 color-5 contenedorp ">
+            <img style="margin: 10% 2% 2% 10%; " width="50% " class="drop " src="nikesb.png " alt=" ">
+            <div class="namep " style="color: #e31c34; ">
+                <span class=" drop ">Linea Nike SB</span>
+            </div>
+            <div class="price drop " style="color: #e31c34; font-size: 300%; ">
+                <span>-20%</span>
+            </div>
+
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+        <div class="p6 color-6 contenedorp ">
+            <img style="margin: 15% 2% 2% 15%; ; " width="40% " class=" drop " src="zenbook.png " alt=" ">
+            <div class="namep ">
+                <span class=" drop ">Asus Zenbook 14"</span>
+            </div>
+            <div class="price drop " style="left: 65% ; ">
+                <span>$2.100.000</span>
+            </div>
+            <div class="pricebefore " style="left: 65% ; ">
+                <span>$2.450.000</span>
+            </div>
+            <div style="margin: auto; " class="aling-center ">
+                <a class=" btn-rojo " href=" "> <span class=" ">Sale$!</span> </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="margin-top: 10%; padding: 2%; " class="bg-bluedark foot ">
+        <div>
+            <span class="robotoft ">Contacto</span>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <div>
+            <span class="robotoft ">Soporte</span>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <div>
+            <span class="robotoft ">Información</span>
+            <br>
+            <br>
+            <hr>
+        </div>
+    </div>
+
+    <div style="padding-bottom: 2%; " class="bg-bluedark foot ">
+        <div>
+            <div><span class="robotofl ">Dirección: <span class="robotofl2 ">Calle falsa 123</span> </span>
+            </div>
+            <div><span class="robotofl ">Telefono: </span><span class="robotofl2 ">(+57 )555 55 55</span></div>
+            <div> <span class="robotofl ">Email: </span> <span class="robotofl2 ">correo@correo.com</span></div>
+            <div style="padding: 2%; " class=" ">
+                <a href=" "><img style="margin: 1% " width="10% " src="facebook.png " alt=" "></a>
+                <a href=" "><img style="margin: 1%; " width="10% " src="instagram-sketched.png " alt=" "> </a>
+                <a href=" "><img style="margin: 1%; " width="10% " src="twitter.png " alt=" "></a>
+                <a href=" "><img style="margin: 1%; " width="10% " src="whatsapp.png " alt=" "></a>
+            </div>
+        </div>
+        <div>
+            <div><a href=" " class="robotofl "><span>¿Ayuda?</span></a></div>
+            <div><a href=" " class="robotofl "><span>Chatea con nosotros</span></a></div>
+            <div><a href=" " class="robotofl "><span>Devoluciones</span></a></div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <div>
+            <div><a href=" " class="robotofl "><span >Guía de compra</span></a></div>
+            <div><a href=" " class="robotofl "><span >Envios</span></a></div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <div style="padding: 1%; " class="copy ">
+        <div><span>Copyright © 2020</span></div>
+    </div>
+
+
+
+    </body>
+
+</html>
